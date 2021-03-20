@@ -892,8 +892,8 @@ textarea {
   height: 90px;
   background-color: rgba(7, 8, 38, 0.7);
   margin: 10px;
-  -webkit-transition: all .5 ease;
-  transition: all .5 ease;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .pr-content__item:hover {
@@ -919,8 +919,10 @@ textarea {
   font-weight: 300;
 }
 
-.pr-content__items_hide div:nth-child(n+7) {
+.pr-content__items_hide div:nth-child(n + 7) {
   display: none;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
 }
 
 body {

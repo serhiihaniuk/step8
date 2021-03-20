@@ -310,23 +310,49 @@ $trans2: all 2s ease-in;
       background-color: rgba($mc, 0.3);
       position: absolute;
       top: 50%;
-      transform: translateY(-40%);
+      transform: translateY(-40%) translateX(0);
       right: 0;
       z-index: 10;
+      transition: all .8s cubic-bezier(.86,0,.49,.92);
+      &_active {
+         width: 800px;
+         transform: translateY(-40%) translateX(50%);
+         right: 50%;
+         }
+      
    }
 }
 
+
+
 .pr-content {
    padding: 40px 40px 40px 20px;
+   
 
-   // .pr-content__search
 
+   &__more{
+      position: absolute;
+      top: 50%;
+      transform: translatey(-50%) translateX(0px) rotate(0deg);
+      left: -38px;
+      color: $mc;
+      font-size: 32px;
+      color: $mc;
+      cursor: pointer;
+      opacity: 0;
+      animation: fadeRight 3s cubic-bezier(.86,0,.49,.92)  infinite;
+      &_active {
+         animation: fadeleft 3s cubic-bezier(.86,0,.49,.92)  infinite;
+      }
+      
+   }
    &__search {
    }
 
    &__btn {
       flex: 1 1 20%;
-
+      animation: fadeRight 1s ease 0 infinite;
+      max-width: 70px;
       border: none;
       outline: none;
       background: url(../ico/search.png), #fff;
@@ -403,14 +429,16 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
    // .pr-content__items
-
+   
    &__items {
       display: flex;
       flex: 1 1 auto;
-      justify-content: space-between;
-     
+      justify-content: center;
+      overflow: hidden;
       padding: 10px;
       flex-wrap: wrap;
+      
+      
    }
 
    // .pr-content__item
@@ -423,15 +451,19 @@ justify-content: space-between;
       cursor: pointer;
       color: #fff;
       font-size: 16px;
-      flex: 0 0 40%;
+      flex: 0 0 125px;
+      min-width: 125px;
+      height: 90px;
       background-color:rgba($mc, .7);
+      
       margin: 10px;
       
-      transition: all .3s ease;;
+      transition: all .3 ease;;
       &:hover {
          transform: scale(1.1);
          box-shadow: 1px 1px 25px rgba(147, 147, 147, 0.904);
       }
+    
       
       
    }
@@ -459,3 +491,6 @@ justify-content: space-between;
 }
 
 
+.pr-content__items_hide div:nth-child(n+7) {
+   display:none;
+}

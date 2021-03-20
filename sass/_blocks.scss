@@ -31,6 +31,8 @@
    position: relative;
    perspective: 100rem;
    transition: all 3s ease;
+   animation: appear6 3s ease .3s;
+      animation-fill-mode: backwards;
 
    
    // .flipcard__side

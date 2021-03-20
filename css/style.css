@@ -147,6 +147,10 @@ textarea {
           perspective: 100rem;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
+  -webkit-animation: appear6 3s ease .3s;
+          animation: appear6 3s ease .3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .flipcard__side {
@@ -419,6 +423,70 @@ textarea {
   }
 }
 
+@-webkit-keyframes appear5 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-135px);
+            transform: translateX(-135px);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+}
+
+@keyframes appear5 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-135px);
+            transform: translateX(-135px);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0px);
+            transform: translatex(0px);
+  }
+}
+
+@-webkit-keyframes appear6 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes appear6 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,6 +735,10 @@ textarea {
           justify-content: center;
   padding: 0 60px;
   position: relative;
+  -webkit-animation: appear5 .8s ease .6s;
+          animation: appear5 .8s ease .6s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__part-left-3:hover .promo__text {
@@ -698,6 +770,10 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
+  -webkit-animation: appear .7s ease .8s;
+          animation: appear .7s ease .8s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__part-left-5 {
@@ -714,6 +790,10 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: appear5 .7s ease .8s;
+          animation: appear5 .7s ease .8s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__right {
@@ -817,6 +897,10 @@ textarea {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-animation: appear5 1.7s ease .9s;
+          animation: appear5 1.7s ease .9s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__part-right-2 {
@@ -827,6 +911,10 @@ textarea {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-animation: appear 1.7s ease .9s;
+          animation: appear 1.7s ease .9s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__part-right-3 {
@@ -837,6 +925,10 @@ textarea {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-animation: appear4 .8s ease .1s;
+          animation: appear4 .8s ease .1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__part-right-4 {
@@ -925,6 +1017,10 @@ textarea {
   position: relative;
   z-index: 10;
   margin: 20px 0px 0px 0px;
+  -webkit-animation: appear5 .6s ease 1.2s;
+          animation: appear5 .6s ease 1.2s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .pr-content__form::before {
@@ -1034,8 +1130,8 @@ textarea {
   margin: 10px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  -webkit-animation: appear3 1s ease 1.3s;
-          animation: appear3 1s ease 1.3s;
+  -webkit-animation: appear3 .5s ease 1.2s;
+          animation: appear3 .5s ease 1.2s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }

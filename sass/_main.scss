@@ -176,6 +176,8 @@ $trans2: all 2s ease-in;
       justify-content: center;
       padding: 0 60px;
       position: relative;
+      animation: appear5 .8s ease .6s;
+      animation-fill-mode: backwards;
       &:hover .promo__text {
          transform: translate(-50%, -50%) scale(1.2);
          text-shadow: 3px 5px 10px rgba(2, 1, 1, 0.9);
@@ -203,6 +205,8 @@ $trans2: all 2s ease-in;
       background-position: center;
       background-repeat: no-repeat;
       flex: 1 1 0;
+      animation: appear .7s ease .8s;
+      animation-fill-mode: backwards;
    }
 
    // .promo__part-left-5
@@ -213,6 +217,8 @@ $trans2: all 2s ease-in;
       display: flex;
       align-items: center;
       justify-content: center;
+      animation: appear5 .7s ease .8s;
+      animation-fill-mode: backwards;
    }
 
    // !.promo__right
@@ -273,6 +279,8 @@ $trans2: all 2s ease-in;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      animation: appear5 1.7s ease .9s;
+      animation-fill-mode: backwards;
    }
 
    // .promo__part-right-2
@@ -284,6 +292,8 @@ $trans2: all 2s ease-in;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      animation: appear 1.7s ease .9s;
+      animation-fill-mode: backwards;
    }
 
    // .promo__part-right-3
@@ -294,6 +304,8 @@ $trans2: all 2s ease-in;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      animation: appear4 .8s ease .1s;
+      animation-fill-mode: backwards;
    }
 
    // .promo__part-right-4
@@ -375,6 +387,8 @@ $trans2: all 2s ease-in;
       position: relative;
       z-index: 10;
       margin: 20px 0px 0px 0px;
+      animation: appear5 .6s ease 1.2s;
+      animation-fill-mode: backwards;
   
       &::before {
          content: "";
@@ -456,7 +470,7 @@ $trans2: all 2s ease-in;
       background-color: rgba($mc, 0.7);
       margin: 10px;
       transition: all .3s ease;
-      animation: appear3 1s ease 1.3s;
+      animation: appear3 .5s ease 1.2s;
       animation-fill-mode: backwards;
      
 

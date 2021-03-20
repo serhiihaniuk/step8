@@ -52,7 +52,7 @@ $trans2: all 2s ease-in;
    &_item {
       margin: 0px 25px 0px 0px;
       position: relative;
-      transition: 0.3s all ease;
+      transition: 0.1s all ease;
       padding: 2px 10px 0px;
       border-bottom: 1px solid $ac;
       &::before {
@@ -72,7 +72,6 @@ $trans2: all 2s ease-in;
       &:hover.menu_item::before {
          transform: scaleX(1);
 
-         transform-origin: bottom right;
       }
 
       &hover {
@@ -318,7 +317,7 @@ $trans2: all 2s ease-in;
 }
 
 .pr-content {
-   padding: 40px;
+   padding: 40px 40px 40px 20px;
 
    // .pr-content__search
 
@@ -362,10 +361,20 @@ $trans2: all 2s ease-in;
       border-right: none;
       position: relative;
       display: inline-block;
-
+      margin: 0px 0px 0px 15px;
+      
+      transition: all 1s ease;
+      &:focus {
+         border-right: 5px solid $ac;
+         margin: 0px 5px 0px 0px;
+         
+      }
       &:focus + div + .pr-content__btn {
          background-color: #1ba58b;
          transform: rotate(360deg);
+         border-radius: 15px;
+         border: 3px solid $ac;
+         margin: 0px 0px 0px 5px;
       }
       &:focus + .input-back {
          background-color: #1ba58b;
@@ -373,15 +382,6 @@ $trans2: all 2s ease-in;
       }
    }
 
-   // .pr-content__items
-
-   &__items {
-   }
-
-   // .pr-content__item
-
-   &__item {
-   }
 }
 
 .input-back {
@@ -396,3 +396,66 @@ $trans2: all 2s ease-in;
    transition: all 1s ease;
 
 }
+
+
+.pr-content {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+   // .pr-content__items
+
+   &__items {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: space-between;
+     
+      padding: 10px;
+      flex-wrap: wrap;
+   }
+
+   // .pr-content__item
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #fff;
+      font-size: 16px;
+      flex: 0 0 40%;
+      background-color:rgba($mc, .7);
+      margin: 10px;
+      
+      transition: all .3s ease;;
+      &:hover {
+         transform: scale(1.1);
+         box-shadow: 1px 1px 25px rgba(147, 147, 147, 0.904);
+      }
+      
+      
+   }
+
+   // .pr-content__item-ico
+
+   &__item-ico {
+      font-size: 22px;
+      filter: hue-rotate(30deg);
+      color: #f35626;
+      background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: hue 60s infinite linear;
+  
+   }
+
+   // .pr-content__item-text
+
+   &__item-text {
+      text-transform: uppercase;
+      font-weight: 300;
+      
+   }
+}
+
+

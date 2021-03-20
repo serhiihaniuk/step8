@@ -24,6 +24,105 @@ textarea {
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?aab9it");
+  src: url("../fonts/icomoon.eot?aab9it#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?aab9it") format("truetype"), url("../fonts/icomoon.woff?aab9it") format("woff"), url("../fonts/icomoon.svg?aab9it#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-left:before {
+  content: "\e900";
+}
+
+.icon-right:before {
+  content: "\e901";
+}
+
+.icon-car:before {
+  content: "\e902";
+}
+
+.icon-city:before {
+  content: "\e903";
+}
+
+.icon-cloud-moon:before {
+  content: "\e904";
+}
+
+.icon-cocktail:before {
+  content: "\e905";
+}
+
+.icon-coffee:before {
+  content: "\e906";
+}
+
+.icon-comment:before {
+  content: "\e907";
+}
+
+.icon-diamond:before {
+  content: "\e908";
+}
+
+.icon-crown:before {
+  content: "\e909";
+}
+
+.icon-dice-five:before {
+  content: "\e90a";
+}
+
+.icon-ball:before {
+  content: "\e90b";
+}
+
+.icon-gem:before {
+  content: "\e90c";
+}
+
+.icon-martini:before {
+  content: "\e90d";
+}
+
+.icon-heart:before {
+  content: "\e90e";
+}
+
+.icon-hospital:before {
+  content: "\e90f";
+}
+
+.icon-image:before {
+  content: "\e910";
+}
+
+.icon-user-circle:before {
+  content: "\e911";
+}
+
+.icon-wine:before {
+  content: "\e912";
+}
+
 .btn-cust {
   color: #fff;
   cursor: pointer;
@@ -168,16 +267,14 @@ textarea {
           transform: scaleX(0);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
-  -webkit-transition: 0.1s all ease;
-  transition: 0.1s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   z-index: 1;
 }
 
 .menu_item:hover.menu_item::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
 }
 
 .promo {
@@ -600,6 +697,83 @@ textarea {
   transition: all 1s ease;
 }
 
+.pr-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pr-content__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pr-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  background-color: rgba(7, 8, 38, 0.7);
+  margin: 10px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.pr-content__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 1px 25px rgba(147, 147, 147, 0.904);
+          box-shadow: 1px 1px 25px rgba(147, 147, 147, 0.904);
+}
+
+.pr-content__item-ico {
+  font-size: 22px;
+  -webkit-filter: hue-rotate(30deg);
+          filter: hue-rotate(30deg);
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+.pr-content__item-text {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -622,6 +796,15 @@ body {
   }
   .mobile {
     display: block;
+  }
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

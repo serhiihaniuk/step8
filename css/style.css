@@ -892,8 +892,8 @@ textarea {
   height: 90px;
   background-color: rgba(7, 8, 38, 0.7);
   margin: 10px;
-  -webkit-transition: all .3 ease;
-  transition: all .3 ease;
+  -webkit-transition: all .5 ease;
+  transition: all .5 ease;
 }
 
 .pr-content__item:hover {

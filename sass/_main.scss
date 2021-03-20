@@ -71,7 +71,6 @@ $trans2: all 2s ease-in;
       }
       &:hover.menu_item::before {
          transform: scaleX(1);
-
       }
 
       &hover {
@@ -103,6 +102,8 @@ $trans2: all 2s ease-in;
       display: flex;
       flex-direction: column;
       transition: $trans;
+      animation: appear 1s ease .3s;
+      animation-fill-mode: backwards;
       &--top {
          flex: 1.3 1 0;
          transition: $trans;
@@ -161,6 +162,8 @@ $trans2: all 2s ease-in;
       background-position: center;
       background-repeat: no-repeat;
       flex: 1 1 0;
+      animation: appear4 1s ease .6s;
+      animation-fill-mode: backwards;
    }
 
    // .promo__part-left-3
@@ -219,6 +222,8 @@ $trans2: all 2s ease-in;
       display: flex;
       flex-direction: column;
       transition: $trans;
+      animation: appear3 1s ease .1s;
+      animation-fill-mode: backwards;
       &--top {
          flex: 1 1 0;
          transition: $trans;
@@ -313,24 +318,22 @@ $trans2: all 2s ease-in;
       transform: translateY(-40%) translateX(0);
       right: 0;
       z-index: 10;
-      transition: all .8s cubic-bezier(.86,0,.49,.92);
+      transition: all 0.8s cubic-bezier(0.86, 0, 0.49, 0.92);
+      animation: appear2 .3s ease 1.3s;
+      animation-fill-mode: backwards;
       &_active {
          width: 800px;
          transform: translateY(-40%) translateX(50%);
          right: 50%;
-         }
-      
+      }
    }
 }
-
-
 
 .pr-content {
    padding: 40px 40px 40px 20px;
    
 
-
-   &__more{
+   &__more {
       position: absolute;
       top: 50%;
       transform: translatey(-50%) translateX(0px) rotate(0deg);
@@ -340,11 +343,10 @@ $trans2: all 2s ease-in;
       color: $mc;
       cursor: pointer;
       opacity: 0;
-      animation: fadeRight 3s cubic-bezier(.86,0,.49,.92)  infinite;
+      animation: fadeRight 3s cubic-bezier(0.86, 0, 0.49, 0.92) infinite;
       &_active {
-         animation: fadeleft 3s cubic-bezier(.86,0,.49,.92)  infinite;
+         animation: fadeleft 3s cubic-bezier(0.86, 0, 0.49, 0.92) infinite;
       }
-      
    }
    &__search {
    }
@@ -371,6 +373,7 @@ $trans2: all 2s ease-in;
       position: relative;
       z-index: 10;
       margin: 20px 0px 0px 0px;
+  
       &::before {
          content: "";
       }
@@ -388,12 +391,11 @@ $trans2: all 2s ease-in;
       position: relative;
       display: inline-block;
       margin: 0px 0px 0px 15px;
-      
+
       transition: all 1s ease;
       &:focus {
          border-right: 5px solid $ac;
          margin: 0px 5px 0px 0px;
-         
       }
       &:focus + div + .pr-content__btn {
          background-color: #1ba58b;
@@ -407,7 +409,6 @@ $trans2: all 2s ease-in;
          left: -20px;
       }
    }
-
 }
 
 .input-back {
@@ -420,16 +421,14 @@ $trans2: all 2s ease-in;
    background-color: $mc;
    z-index: -1;
    transition: all 1s ease;
-
 }
 
-
 .pr-content {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    // .pr-content__items
-   
+
    &__items {
       display: flex;
       flex: 1 1 auto;
@@ -437,8 +436,6 @@ justify-content: space-between;
       overflow: hidden;
       padding: 10px;
       flex-wrap: wrap;
-      
-      
    }
 
    // .pr-content__item
@@ -454,18 +451,17 @@ justify-content: space-between;
       flex: 0 0 125px;
       min-width: 125px;
       height: 90px;
-      background-color:rgba($mc, .7);
-      
+      background-color: rgba($mc, 0.7);
       margin: 10px;
-      
-      transition: all .3 ease;;
+      transition: all .3s ease;
+      animation: appear3 1s ease 1.3s;
+      animation-fill-mode: backwards;
+     
+
       &:hover {
          transform: scale(1.1);
          box-shadow: 1px 1px 25px rgba(147, 147, 147, 0.904);
       }
-    
-      
-      
    }
 
    // .pr-content__item-ico
@@ -478,7 +474,6 @@ justify-content: space-between;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       -webkit-animation: hue 60s infinite linear;
-  
    }
 
    // .pr-content__item-text
@@ -486,11 +481,13 @@ justify-content: space-between;
    &__item-text {
       text-transform: uppercase;
       font-weight: 300;
-      
    }
 }
 
-
-.pr-content__items_hide div:nth-child(n+7) {
-   display:none;
+.pr-content__items_hide div:nth-child(n + 7) {
+   display: none;
+   opacity: 0;
+   
+   transition: all 0.3s ease;
+   
 }

@@ -299,6 +299,126 @@ textarea {
   }
 }
 
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(35px);
+            transform: translateX(35px);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(35px);
+            transform: translateX(35px);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes appear2 {
+  from {
+    opacity: 0;
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear2 {
+  from {
+    opacity: 0;
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes appear3 {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(125px);
+            transform: translatey(125px);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes appear3 {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(125px);
+            transform: translatey(125px);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@-webkit-keyframes appear4 {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(-125px);
+            transform: translatey(-125px);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes appear4 {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(-125px);
+            transform: translatey(-125px);
+  }
+  25% {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -417,6 +537,10 @@ textarea {
           flex-direction: column;
   -webkit-transition: all 4s ease;
   transition: all 4s ease;
+  -webkit-animation: appear 1s ease .3s;
+          animation: appear 1s ease .3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__left--top {
@@ -521,6 +645,10 @@ textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
+  -webkit-animation: appear4 1s ease .6s;
+          animation: appear4 1s ease .6s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__part-left-3 {
@@ -601,6 +729,10 @@ textarea {
           flex-direction: column;
   -webkit-transition: all 4s ease;
   transition: all 4s ease;
+  -webkit-animation: appear3 1s ease .1s;
+          animation: appear3 1s ease .1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__right--top {
@@ -726,6 +858,10 @@ textarea {
   z-index: 10;
   -webkit-transition: all 0.8s cubic-bezier(0.86, 0, 0.49, 0.92);
   transition: all 0.8s cubic-bezier(0.86, 0, 0.49, 0.92);
+  -webkit-animation: appear2 .3s ease 1.3s;
+          animation: appear2 .3s ease 1.3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .promo__content_active {
@@ -894,6 +1030,10 @@ textarea {
   margin: 10px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  -webkit-animation: appear3 1s ease 1.3s;
+          animation: appear3 1s ease 1.3s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .pr-content__item:hover {
@@ -921,6 +1061,7 @@ textarea {
 
 .pr-content__items_hide div:nth-child(n + 7) {
   display: none;
+  opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }

@@ -2,6 +2,13 @@ $mc: #070826;
 $ac: #a61c1c;
 $tc: #fff;
 
+//==
+$bp1: 1200px;
+$bp2: 992px;
+$bp3: 768px;
+$bp4: 576px;
+
+
 
 
 
@@ -53,14 +60,14 @@ body {
    vertical-align: middle;
 }
 
-@media (max-width: 900px) {
-   .promo {
-      display: none;
-   }
-   .mobile {
-      display: block;
-   }
-}
+// @media (max-width: 900px) {
+//    .promo {
+//       display: none;
+//    }
+//    .mobile {
+//       display: block;
+//    }
+// }
 
 
 

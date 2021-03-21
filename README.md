@@ -3,5 +3,3 @@ step8
 
 
 <a href="https://serhiihaniuk.github.io/step8/"> link </a> 
-
-Work in progress.

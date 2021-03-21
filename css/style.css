@@ -511,7 +511,7 @@ h1 {
     height: 100vh;
     width: 100%;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #070826;
     position: fixed;
     top: -200%;
     left: 0;
@@ -582,9 +582,11 @@ h1 {
   z-index: -1;
 }
 
-.menu_item:hover.menu_item::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+@media (min-width: 992px) {
+  .menu_item:hover.menu_item::before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
 .menu_item a {
@@ -594,6 +596,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.2px;
   color: #ffffff;
+  background-color: green;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;

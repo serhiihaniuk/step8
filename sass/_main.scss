@@ -44,7 +44,7 @@ $trans2: all 2s ease-in;
       height: 100vh;
       width: 100%;
       margin: 0;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: $mc;
       position: fixed;
       top: -200%;
       left: 0;
@@ -98,8 +98,9 @@ $trans2: all 2s ease-in;
          transition: 0.3s all ease;
          z-index: -1;
       }
+      @media (min-width: $bp2) {
       &:hover.menu_item::before {
-         transform: scaleX(1);
+         transform: scaleX(1);}
       }
       & a {
          font-weight: normal;
@@ -108,6 +109,7 @@ $trans2: all 2s ease-in;
          text-align: center;
          letter-spacing: 0.2px;
          color: #ffffff;
+         background-color: green;
          text-decoration: none;
          transition: all 0.3s ease;
          position: relative;

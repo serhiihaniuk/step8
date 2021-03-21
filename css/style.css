@@ -562,24 +562,8 @@ h1 {
   padding: 2px 5px 0px;
   border-bottom: 1px solid #a61c1c;
   z-index: 3;
-}
-
-.menu_item::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #a61c1c;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-  z-index: -1;
+  background-color: transparent;
+  border-radius: 0;
 }
 
 @media (min-width: 992px) {
@@ -595,8 +579,8 @@ h1 {
   line-height: 35px;
   text-align: center;
   letter-spacing: 0.2px;
-  color: #ffffff;
-  background-color: green;
+  color: red;
+  background-color: transparent;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;

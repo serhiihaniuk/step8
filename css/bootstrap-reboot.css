@@ -182,6 +182,7 @@ sup {
 a {
   color: #0d6efd;
   text-decoration: underline;
+  background-color: transparent;
 }
 a:hover {
   color: #0a58ca;
@@ -425,4 +426,3 @@ progress {
   display: none !important;
 }
 
-/*# sourceMappingURL=bootstrap-reboot.css.map */

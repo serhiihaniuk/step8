@@ -6,6 +6,10 @@ h1 {
   font-size: 45px;
 }
 
+h2 {
+  margin: 0;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?aab9it");
@@ -1411,6 +1415,7 @@ h1 {
 
 .today__title {
   font-size: 44px;
+  margin: 5px;
 }
 
 .today__subtitle {

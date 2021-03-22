@@ -26,5 +26,38 @@ window.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
         });
-    })
+    });
+
+    const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        slidesPerView: 1,
+        centeredSlides: true,
+        slidesOffsetBefore: 10,
+        loop: true,
+        spaceBetween: 50,
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+
+        flipEffect: {
+            slideShadows: false,
+          },
+
+          breakpoints: {
+            // when window width is >= 
+            576: {
+                slidesOffsetBefore: 150,
+            },
+          
+          }
+        
+      });
+      
 })

@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="css/bootstrap-reboot.css">
-   <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -26,22 +30,22 @@
           <nav class="menu">
             <ul class="menu_list">
               <li class="menu_item">
-                <a href="#" class="menu_item-link" >Home</a>
+                <a href="#" class="menu_item-link">Home</a>
               </li>
               <li class="menu_item">
-                <a href="#" class="menu_item-link" >Sign In</a>
+                <a href="#" class="menu_item-link">Sign In</a>
               </li>
               <li class="menu_item">
-                <a href="#" class="menu_item-link" >About</a>
+                <a href="#" class="menu_item-link">About</a>
               </li>
               <li class="menu_item">
-                <a href="#" class="menu_item-link" >Listings</a>
+                <a href="#" class="menu_item-link">Listings</a>
               </li>
               <li class="menu_item">
-                <a href="#" class="menu_item-link" >Blog</a>
+                <a href="#" class="menu_item-link">Blog</a>
               </li>
               <li class="menu_item">
-                <a href="#" class="menu_item-link" >Contact</a>
+                <a href="#" class="menu_item-link">Contact</a>
               </li>
             </ul>
           </nav>
@@ -113,7 +117,10 @@
         <div class="promo__left">
           <div class="promo__left--top promo__left-container">
             <div class="promo__part-left-1 promo__part-left--top">
-              <h1 class="icon-diamond">COMPANY CULTURE</h1>
+              <h1 class="icon-diamond">
+                COMPANY<br />
+                CULTURE
+              </h1>
             </div>
             <div class="promo__part-left-2 promo__part-left--top"></div>
           </div>
@@ -147,26 +154,61 @@
       </div>
     </div>
 
-    <div class="mobile">Mobile version in progress.</div>
-    <div>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-      consequuntur quibusdam aliquid totam. Maxime nemo ducimus recusandae totam
-      libero provident, debitis voluptatem expedita! Et aspernatur expedita, in
-      ducimus porro assumenda? Quae illum beatae nulla eos, voluptatibus
-      eligendi perferendis, assumenda unde et provident delectus. Voluptate,
-      pariatur? Exercitationem pariatur iure nesciunt deserunt! Voluptate
-      numquam, itaque temporibus expedita doloribus sit minus sed porro! Sunt
-      quaerat neque velit non nobis quod iure, corporis minima culpa, porro illo
-      omnis ducimus. Quaerat excepturi a, id aperiam magni nisi quam, eius
-      facere culpa consequatur beatae veniam suscipit. Laboriosam vel a quis
-      alias consequuntur debitis ad cum totam. Velit consequatur itaque, quas
-      fugit dicta expedita aperiam atque quod ab, laboriosam natus. Neque cum,
-      nzecessitatibus maiores quibusdam illum sed. Maiores nulla cum obcaecati a
-      id voluptas minima mollitia quasi. Necessitatibus officiis magni ut eaque,
-      vel commodi fuga corporis non iure esse exercitationem fugit? Soluta
-      blanditiis fugiat non est aperiam.z
+    <div class="today">
+      <div class="today__text">
+        <h2 class="today__title icon-diamond">What do you need today?</h2>
+        <div class="today__subtitle">Easily glimpse hand picked places</div>
+      </div>
+      <div class="today__card-section">
+        <div class="today__card-section-wrapper"> <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="today__card" style="background-image:url('img/categories/1.jpg')">
+                <div class="today__card-text-top" >Tour</div>
+                <div class="today__card-text-bot icon-image" ></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="today__card" style="background-image:url('img/categories/2.jpg')">
+                <div class="today__card-text-top">Eat</div>
+                <div class="today__card-text-bot icon-cocktail" ></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="today__card" style="background-image:url('img/categories/3.jpg')">
+                <div class="today__card-text-top">Relax</div>
+                <div class="today__card-text-bot icon-city" ></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="today__card" style="background-image:url('img/categories/4.jpg')">
+                <div class="today__card-text-top">Buy</div>
+                <div class="today__card-text-bot icon-crown" ></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="today__card" style="background-image:url('img/categories/5.jpg')">
+                <div class="today__card-text-top">Other</div>
+                <div class="today__card-text-bot icon-crown" ></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="today__card" style="background-image:url('img/categories/6.jpg')">
+                <div class="today__card-text-top">Other</div>
+                <div class="today__card-text-bot icon-crown" ></div>
+              </div>
+            </div>
+            ...
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div></div>
+      </div>
     </div>
+    <div class="test"> </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-    
   </body>
 </html>

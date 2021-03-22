@@ -59,5 +59,29 @@ window.addEventListener('DOMContentLoaded', () => {
           }
         
       });
+
+      new Swiper('.swiper-container-trending', {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+        // Navigation arrows
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+
+        flipEffect: {
+            slideShadows: false,
+          },
+
+         
+        
+      });
       
 })

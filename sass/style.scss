@@ -8,7 +8,13 @@ $bp2: 992px;
 $bp3: 768px;
 $bp4: 576px;
 
+.test {
+   width: 100%;
+   height: 500px;
+   background-color: $mc;
+   box-shadow: 0px 0px 25px rgba(2, 1, 1, 0.68);
 
+}
 
 
 * {
@@ -20,11 +26,16 @@ h1 {
    font-size: 45px;
 }
 
+h2 {
+   margin: 0;
+}
+
 @import "icons";
 @import "blocks";
 @import "animations";
 @import "main";
 @import "today";
+@import "trending";
 
 // colors ==============================================================================
 

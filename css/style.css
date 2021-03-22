@@ -1407,7 +1407,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffc824ad;
+  background-color: #ffc8244e;
   padding: 10px;
   -webkit-box-shadow: 10px -10px 20px rgba(2, 1, 1, 0.313);
           box-shadow: 10px -10px 20px rgba(2, 1, 1, 0.313);
@@ -1419,6 +1419,7 @@ h2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 200px;
             flex: 0 0 200px;
+    max-height: 200px;
   }
 }
 

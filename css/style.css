@@ -1654,6 +1654,7 @@ h2 {
 @media (max-width: 768px) {
   .trending__header {
     top: -19px;
+    width: 100%;
   }
 }
 
@@ -1779,6 +1780,7 @@ h2 {
   border-bottom: solid 1px rgba(255, 255, 255, 0.68);
   margin: 0px 0px 15px 0px;
   font-weight: 300;
+  padding: 0 20px;
 }
 
 .trending__item-adress span {
@@ -1885,6 +1887,35 @@ h2 {
   background-image: url(../img/bg-pat2.png);
   background-repeat: repeat;
   background-position: bottom;
+  position: relative;
+}
+
+.section-cards__header {
+  text-align: center;
+  background-color: #070826;
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+  color: #b3b3b3;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 0px 25px rgba(2, 1, 1, 0.68);
+          box-shadow: 0px 0px 25px rgba(2, 1, 1, 0.68);
+}
+
+@media (max-width: 768px) {
+  .section-cards__header {
+    top: -19px;
+  }
+}
+
+.section-cards__header h2 {
+  font-size: 30px;
 }
 
 .section-cards__row {
@@ -1894,6 +1925,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 50px 0;
 }
 
 @media (max-width: 992px) {

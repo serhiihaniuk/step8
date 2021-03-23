@@ -65,6 +65,8 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1,
         spaceBetween: 15,
         loop: true,
+        parallax: false,
+        speed: 855,
         // Navigation arrows
         navigation: {
           nextEl: '.button-next',
@@ -79,8 +81,14 @@ window.addEventListener('DOMContentLoaded', () => {
         flipEffect: {
             slideShadows: false,
           },
-
-         
+          
+          breakpoints: {
+            // when window width is >= 
+            768: {
+              parallax: true,
+            },
+          
+          }
         
       });
       

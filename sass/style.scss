@@ -57,6 +57,10 @@ h2 {
    margin: 0;
 }
 
+ul {
+   list-style: none;
+}
+
 @import "icons";
 @import "blocks";
 @import "animations";
@@ -65,6 +69,7 @@ h2 {
 @import "trending";
 @import "howit";
 @import "app";
+@import "footer";
 
 // colors ==============================================================================
 

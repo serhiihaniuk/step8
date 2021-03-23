@@ -1,0 +1,139 @@
+.footer {
+   // background-image: url(../img/bg-pat2.png);
+   background-color: #2f3640;
+   background-repeat: repeat;
+   background-position: bottom;
+   position: relative;
+   color: #b3b3b3;
+
+   @media (max-width: $bp4) {
+      text-align: center;
+      
+   }
+
+   & li {
+      transition: all 0.3s ease;
+   }
+   & li:hover {
+      text-decoration: underline;
+      color: blue;
+   }
+   // .footer__bg
+
+   &__bg {
+      // background-color: rgba($mc, 0.9);
+      background-color: #2f3640;
+      // backdrop-filter: blur(4px);
+      width: 100%;
+      height: 100%;
+      padding: 32px 0px 52px 0px;
+   }
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: $bp1) {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+   }
+   // .footer__list
+
+   &__list {
+      flex: 0 0 20%;
+      padding: 0px 0px 0px 25px;
+      cursor: pointer;
+      @media (max-width: $bp1) {
+         flex: 0 0 33%;
+      }
+      @media (max-width: $bp4) {
+         flex: 0 0 90%;
+         margin: 30px 0px 0px 0px;
+      }
+   }
+
+   // .footer__list-title
+
+   &__list-title {
+      font-weight: 500;
+      font-size: 18px;
+   }
+
+   // .footer__list-items
+
+   &__list-items {
+      margin: 0;
+      padding: 0 10px;
+   }
+
+   // .footer__list-item
+
+   &__list-item {
+      margin: 10px 0px 0px 0px;
+   }
+
+   // .footer__contacts
+
+   &__contacts {
+      flex: 0 0 40%;
+      padding: 0px 0px 0px 25px;
+      cursor: pointer;
+      @media (max-width: $bp1) {
+         flex: 1 1 80%;
+         margin: 25px 0px 0px 0px;
+      }
+      @media (max-width: $bp4) {
+         flex: 0 0 90%;
+         margin: 30px 0px 0px 0px;
+      }
+
+      &--write {
+         flex: 0 0 20%;
+         cursor: pointer;
+         padding: 0px 0px 0px 25px;
+         @media (max-width: $bp1) {
+            flex: 0 0 33%;
+         }
+         @media (max-width: $bp4) {
+            flex: 0 0 90%;
+            margin: 30px 0px 0px 0px;
+         }
+      }
+   }
+
+   // .footer__contacts-title
+
+   &__contacts-title {
+      font-weight: 500;
+      font-size: 18px;
+   }
+
+   // .footer__contacts-list
+
+   &__contacts-list {
+      margin: 0;
+      padding: 0;
+   }
+
+   // .footer__contacts-item
+
+   &__contacts-item {
+      margin: 10px 0px 0px 0px;
+      padding: 0 10px;
+
+      & span {
+         display: inline-block;
+         margin: 0px 15px 0px 0px;
+         font-size: 25px;
+         vertical-align: middle;
+      }
+   }
+}
+
+.copy {
+   width: 100%;
+   height: 70px;
+   background-color: $mc;
+   color: #b3b3b3;
+   text-align: center;
+   line-height: 70px;
+}

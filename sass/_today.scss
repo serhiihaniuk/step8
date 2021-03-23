@@ -5,7 +5,7 @@
    display: flex;
    align-items: flex-end;
    color: $mc;
-   padding: 0px 0px 25px 0px;
+   padding: 0px 0px 15px 0px;
    @media (max-width: $bp2) {
       flex-direction: column;
       align-items: center;
@@ -64,6 +64,15 @@
       box-shadow: 0px 0px 25px rgba(2, 1, 1, 0.68);
       margin: 25px 0px 20px 0px;
       cursor: pointer;
+      &:hover &-text-bot {
+         transform: rotate(360deg);
+
+      }
+
+      &:hover &-text-top {
+         transform: scale(1.1);
+
+      }
       @media (max-width: $bp4) {
          box-shadow: none;
          
@@ -76,7 +85,7 @@
    &__card-text-top {
       font-size: 25px;
       color: #fff;
-      background-color: rgba($ac, .5);
+      background-color: rgba($mc, 0.7);
       padding: 5px;
       font-weight: 500;
       position: absolute;
@@ -85,10 +94,8 @@
       top: 32px;
       left: -40px;
       z-index: 3;
-      animation: appear3 1s ease 1.1s;
-      animation-fill-mode: backwards;
-      box-shadow: -5px 10px 10px rgba(2, 1, 1, 0.551);
-      
+      transition: transform .8s ease;
+      box-shadow: 0px 0px 10px rgba(2, 1, 1, 0.551);
       @media (max-width: $bp4) {
          left: 16px;
          
@@ -98,7 +105,7 @@
    &__card-text-bot {
       font-size: 25px;
       color: #fff;
-      background-color: rgba($ac, .5);
+      background-color: rgba($mc, 0.7);
       padding: 10px 0 5px 0;
       font-weight: 500;
       position: absolute;
@@ -106,11 +113,12 @@
       height: 50px;
       border-radius: 50%;
       text-align: center;
-      box-shadow: -5px 10px 10px rgba(2, 1, 1, 0.551);
+      box-shadow: 0px 0px 10px rgba(2, 1, 1, 0.551);
       backdrop-filter: blur(2px);
       bottom: 37px;
       right: 294px;
       z-index: 3;
+      transition: transform .8s ease;
       @media (max-width: $bp4) {
          right: 41px;
          

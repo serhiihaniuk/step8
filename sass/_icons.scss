@@ -24,7 +24,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-gas-station:before {
+  content: "\e913";
+}
+.icon-location:before {
+  content: "\e914";
+}
 .icon-left:before {
   content: "\e900";
 }

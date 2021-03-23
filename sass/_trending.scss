@@ -3,7 +3,7 @@
    height: 500px;
    background-color: #df682d;
    position: relative;
-   padding: 50px 0px 50px 0px;
+   padding: 60px 0px 50px 0px;
    &__header {
       text-align: center;
       background-color: #ffc824;
@@ -17,35 +17,163 @@
       color: $mc;
       font-size: 18px;
       box-shadow: 0px 0px 25px rgba(2, 1, 1, 0.68);
+      @media (max-width: $bp3) {
+         top: -19px;
+      }
       & h2 {
          font-size: 30px;
       }
    }
-}
+   // .trending__item
 
-.trending__item {
-   width: 80%;
-   height: 100%;
-   margin: 0 auto;
-   background-size: cover;
-   background-position: bottom;
-   background-repeat: no-repeat;
-   box-shadow: 0px 0px 25px rgba(2, 1, 1, 0.68);
+   &__item {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      box-shadow: 0px 0px 25px rgba(2, 1, 1, 0.68);
+      position: relative;
+      @media (max-width: $bp3) {
+         width: 100%;
+      }
 
-   @media (max-width: $bp3) {
-      width: 100%;
+      &--1 {
+         background-image: linear-gradient(to right bottom, #262627ad, #13131380), url(../img/trending/1.jpg);
+      }
+      &--2 {
+         background-image: linear-gradient(to right bottom, #262627ad, #13131380), url(../img/trending/2.jpg);
+      }
+      &--3 {
+         background-image: linear-gradient(to right bottom, #262627ad, #13131380), url(../img/trending/3.jpg);
+      }
+      &--4 {
+         background-image: linear-gradient(to right bottom, #262627ad, #13131380), url(../img/trending/4.jpg);
+      }
    }
-   &--1 {
-      background-image: linear-gradient(to right bottom, #262627ad, #13131380), url(../img/trending/1.jpg);
+   // .trending__item-info
+
+   &__item-info {
+      margin: 0 auto;
+      text-align: center;
+      padding: 75px 0px 0px 0px;
+      width: 60%;
+      position: relative;
+      z-index: 3;
+      cursor: pointer;
+      backdrop-filter: grayscale(80%) blur(2px);
+      background-color: rgba($mc, 0.3);
+      height: 100%;
+      @media (max-width: $bp4) {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         padding: 75px 0px 15px 0px;
+      }
+      @media (min-width: $bp2) {
+         &:hover .trending__item-name::after {
+            transform: scaleX(1);
+         }
+      }
+      &:hover .trending__item-icons--bg {
+         transform: scale(1.2);
+         background-color: transparent;
+      }
    }
-   &--2 {
-      background-image: linear-gradient(to right bottom, #262627ad, #13131380), url(../img/trending/2.jpg);
+
+   // .trending__item-name
+
+   &__item-name {
+      font-size: 22px;
+      letter-spacing: 3px;
+      font-weight: 500;
+      margin: 0px 0px 15px 0px;
+      transition: all 1s ease;
+      position: relative;
+      z-index: 15;
+      animation: letterSpacing 15s ease infinite;
+
+      &::after {
+         content: "";
+         display: block;
+         width: 100%;
+         height: 100%;
+         background-color: $ac;
+         position: absolute;
+         bottom: 0px;
+         left: 0;
+         transform: scaleX(0);
+         transform-origin: bottom left;
+         transition: 0.3s all ease;
+         z-index: -1;
+      }
    }
-   &--3 {
-      background-image: linear-gradient(to right bottom, #262627ad, #13131380), url(../img/trending/3.jpg);
+
+   // .trending__item-adress
+
+   &__item-adress {
+      font-size: 22px;
+      border-bottom: solid 1px rgba(255, 255, 255, 0.68);
+      margin: 0px 0px 15px 0px;
+      font-weight: 300;
+      & span {
+         font-size: 18px;
+         display: block;
+      }
    }
-   &--4 {
-      background-image: linear-gradient(to right bottom, #262627ad, #13131380), url(../img/trending/4.jpg);
+
+   // .trending__item-desc
+
+   &__item-desc {
+      background-color: rgba($mc, 0.7);
+      padding: 5px;
+      width: 320px;
+      margin: 0 auto 25px;
+      @media (max-width: $bp4) {
+         display: none;
+      }
+   }
+
+   // .trending__item-icons
+
+   &__item-icons {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+
+      &--bg {
+         background-color: rgba($mc, 0.7);
+         padding: 10px;
+         width: 65px;
+         display: inline-block;
+         transition: all 1s ease;
+      }
+      &--1 {
+         filter: hue-rotate(30deg);
+         color: #f35626;
+         background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         -webkit-animation: hue 30s infinite linear;
+      }
+      &--2 {
+         filter: hue-rotate(30deg);
+         color: #f35626;
+         background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         -webkit-animation: hue 30s infinite linear;
+      }
+      &--3 {
+         font-weight: 900;
+         filter: hue-rotate(30deg);
+         color: #f35626;
+         background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         -webkit-animation: hue 30s infinite linear;
+      }
    }
 }
 
@@ -53,8 +181,6 @@
    height: 100%;
    overflow: hidden;
 }
-
-
 
 .button-prev,
 .button-next {

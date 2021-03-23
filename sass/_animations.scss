@@ -145,3 +145,20 @@
       transform: rotate(0deg);;
    }
 }
+
+
+@keyframes letterSpacing {
+   from {
+      letter-spacing: 3px;
+   }
+
+   50% {
+      letter-spacing: 5px;
+
+   }
+   
+   to {
+      letter-spacing: 3px;
+   }
+}
+

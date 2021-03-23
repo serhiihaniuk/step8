@@ -24,6 +24,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-googleplay:before {
+  content: "\e915";
+  color: #607d8b;
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+
 .icon-gas-station:before {
   content: "\e913";
 }

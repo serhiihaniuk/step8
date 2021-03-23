@@ -76,6 +76,15 @@ h2 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-googleplay:before {
+  content: "\e915";
+  color: #607d8b;
+}
+
+.icon-appleinc:before {
+  content: "\eabe";
+}
+
 .icon-gas-station:before {
   content: "\e913";
 }
@@ -1445,8 +1454,6 @@ h2 {
           align-items: flex-end;
   color: #070826;
   padding: 0px 0px 15px 0px;
-  width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 992px) {
@@ -2036,6 +2043,124 @@ h2 {
 .card:hover .card__text {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.app {
+  width: 100%;
+  height: 250px;
+  background-color: #2f3640;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.app__wrapper {
+  width: 100%;
+  height: 200px;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app__card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 500px;
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #484040;
+  border-right: 1px solid #484040;
+}
+
+@media (max-width: 576px) {
+  .app__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+  }
+}
+
+.app__card:hover .app__card-side--1 {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.app__card:hover .app__card-side--2 {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.app__card-side {
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #b3b3b3;
+}
+
+.app__card-title {
+  display: block;
+  font-size: 25px;
+}
+
+.app__card-side--1 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #2f3640;
+}
+
+.app__card-side--2 {
+  -webkit-transform: translateY(0) scale(0.9);
+          transform: translateY(0) scale(0.9);
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.app__download {
+  display: inline-block;
+  font-size: 18px;
+  color: #2f3640;
+}
+
+.app__download-span {
+  display: inline-block;
+  margin: 17px 11px 0px 0px;
 }
 
 body {

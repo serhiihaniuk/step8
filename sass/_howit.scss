@@ -2,10 +2,32 @@
    background-image: url(../img/bg-pat2.png);
    background-repeat: repeat;
    background-position: bottom;
-
+   position: relative;
+   &__header {
+      text-align: center;
+      background-color: $mc;
+      width: 100%;
+      padding: 10px;
+      display: inline-block;
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      color: #b3b3b3;
+      font-size: 18px;
+      box-shadow: 0px 0px 25px rgba(2, 1, 1, 0.68);
+      @media (max-width: $bp3) {
+         top: -19px;
+      }
+      & h2 {
+         font-size: 30px;
+      }
+   }
    &__row {
       display: flex;
       justify-content: space-between;
+      padding: 50px 0;
       @media (max-width: $bp2) {
          flex-wrap: wrap;
       }

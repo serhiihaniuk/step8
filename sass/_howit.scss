@@ -1,0 +1,86 @@
+.section-cards {
+   background-image: url(../img/bg-pat2.png);
+   background-repeat: repeat;
+   background-position: bottom;
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: $bp2) {
+         flex-wrap: wrap;
+      }
+      @media (max-width: $bp4) {
+         justify-content: center;
+      }
+   }
+
+   &__bg {
+      background-color: rgba($mc, 0.9);
+      // backdrop-filter: blur(4px);
+      width: 100%;
+      height: 100%;
+      padding: 32px 0px 32px 0px;
+   }
+}
+.card {
+   flex: 0 0 22%;
+   background-color: rgba($mc, 0.2);
+   text-align: center;
+   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+   transition: all 0.5s ease-out;
+   cursor: pointer;
+   color: #b3b3b3;
+   position: relative;
+   padding: 125px 20px 20px 20px;
+   border: 1px solid #d3d3d3;
+   @media (max-width: $bp2) {
+      flex: 0 0 45%;
+      margin: 0px 0px 10px 0px;
+   }
+   @media (max-width: $bp4) {
+      flex: 0 0 85%;
+      margin: 0px 0px 10px 0px;
+      padding: 100px 10px 10px 10px;
+
+   }
+
+   &__title {
+      margin: 0px 0px 10px 0px;
+      transition: all 0.5s ease-out;
+      width: 80%;
+      display: inline-block;
+      font-size: 16px;
+      border-top: dashed 1px #d3d3d3;
+      border-bottom: dashed 1px #d3d3d3;
+      white-space: nowrap;
+   }
+   &__text {
+      transition: all 0.5s ease-out;
+   }
+
+   &__img {
+      transition: all 0.5s ease-out;
+      width: 65px;
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: scale(1) translate(-50%, 0);
+   }
+   &:hover {
+      box-shadow: 2px 10px 20px rgba(90, 90, 90, 0.381);
+      border: dashed 1px #d3d3d3;
+      background-color: rgba($mc, 0.6);
+      & .card__img {
+         transform: scale(1.25) translate(-40%, 0);
+      }
+
+      & .card__title {
+         transform: scale(1.1);
+         width: 100%;
+      }
+      & .card__text {
+         transform: scale(1.05);
+      }
+   }
+}

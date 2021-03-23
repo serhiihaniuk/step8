@@ -70,6 +70,7 @@
          flex-direction: column;
          justify-content: space-between;
          padding: 75px 0px 15px 0px;
+         width: 90%;
       }
       @media (min-width: $bp2) {
          &:hover .trending__item-name::after {
@@ -201,4 +202,7 @@
 
 .button-next {
    right: 5%;
+   @media (max-width: $bp4) {
+      right: 0%;
+   }
 }

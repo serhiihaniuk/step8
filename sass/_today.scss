@@ -6,6 +6,8 @@
    align-items: flex-end;
    color: $mc;
    padding: 0px 0px 15px 0px;
+   width: 100%;
+   height: 100%;
    @media (max-width: $bp2) {
       flex-direction: column;
       align-items: center;

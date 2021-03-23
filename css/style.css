@@ -1689,6 +1689,7 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 75px 0px 15px 0px;
+    width: 80%;
   }
 }
 

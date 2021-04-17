@@ -50,12 +50,10 @@ $trans2: all 2s ease-in;
       top: -200%;
       left: 0;
       transition: 0.6s all;
-      
    }
    &_active {
       top: 0;
       z-index: 100;
-      
    }
    &_list {
       list-style: none;
@@ -69,7 +67,6 @@ $trans2: all 2s ease-in;
             display: block;
             border: none;
             margin: 45px;
-            
          }
       }
       &_active {
@@ -86,7 +83,7 @@ $trans2: all 2s ease-in;
       z-index: 3;
       background-color: transparent;
       border-radius: 0;
-      
+
       &::before {
          content: "";
          display: block;
@@ -102,8 +99,9 @@ $trans2: all 2s ease-in;
          z-index: -1;
       }
       @media (min-width: $bp2) {
-      &:hover.menu_item::before {
-         transform: scaleX(1);}
+         &:hover.menu_item::before {
+            transform: scaleX(1);
+         }
       }
       & a {
          font-weight: normal;
@@ -116,7 +114,6 @@ $trans2: all 2s ease-in;
          text-decoration: none;
          transition: all 0.3s ease;
          position: relative;
-        
       }
    }
 }
@@ -124,7 +121,7 @@ $trans2: all 2s ease-in;
    background-color: $mc;
    z-index: 555;
    overflow: hidden;
-  
+
    @media (max-width: $bp3) {
       font-size: 20px;
       margin: 15px 0px 0px 0px;
@@ -138,7 +135,6 @@ $trans2: all 2s ease-in;
       margin: 0px 0px 15px 0px;
    }
 }
-
 
 .hamburger {
    display: none;
@@ -192,7 +188,6 @@ $trans2: all 2s ease-in;
    }
 }
 
-
 // ! ====
 
 .promo {
@@ -203,7 +198,7 @@ $trans2: all 2s ease-in;
    position: relative;
    background-color: $mc;
    box-shadow: -5px 10px 10px rgba(2, 1, 1, 0.156);
-   
+   overflow: hidden;
 
    // !.promo_wrapper  MAIN BACKGROUND
 
@@ -221,7 +216,7 @@ $trans2: all 2s ease-in;
       display: flex;
       flex-direction: column;
       transition: $trans;
-      animation: appear 1s ease .3s;
+      animation: appear 1s ease 0.3s;
       animation-fill-mode: backwards;
       &--top {
          flex: 1.3 1 0;
@@ -285,7 +280,7 @@ $trans2: all 2s ease-in;
       background-position: center;
       background-repeat: no-repeat;
       flex: 1 1 0;
-      animation: appear4 1s ease .6s;
+      animation: appear4 1s ease 0.6s;
       animation-fill-mode: backwards;
    }
 
@@ -299,7 +294,7 @@ $trans2: all 2s ease-in;
       justify-content: center;
       padding: 0 60px;
       position: relative;
-      animation: appear5 .8s ease .6s;
+      animation: appear5 0.8s ease 0.6s;
       animation-fill-mode: backwards;
       @media (max-width: $bp4) {
          display: none;
@@ -331,7 +326,7 @@ $trans2: all 2s ease-in;
       background-position: center;
       background-repeat: no-repeat;
       flex: 1 1 0;
-      animation: appear .7s ease .8s;
+      animation: appear 0.7s ease 0.8s;
       animation-fill-mode: backwards;
    }
 
@@ -343,7 +338,7 @@ $trans2: all 2s ease-in;
       display: flex;
       align-items: center;
       justify-content: center;
-      animation: appear5 .7s ease .8s;
+      animation: appear5 0.7s ease 0.8s;
       animation-fill-mode: backwards;
    }
 
@@ -354,7 +349,7 @@ $trans2: all 2s ease-in;
       display: flex;
       flex-direction: column;
       transition: $trans;
-      animation: appear3 1s ease .1s;
+      animation: appear3 1s ease 0.1s;
       animation-fill-mode: backwards;
       @media (max-width: $bp2) {
          display: none;
@@ -408,7 +403,7 @@ $trans2: all 2s ease-in;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      animation: appear5 1.7s ease .9s;
+      animation: appear5 1.7s ease 0.9s;
       animation-fill-mode: backwards;
    }
 
@@ -421,7 +416,7 @@ $trans2: all 2s ease-in;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      animation: appear 1.7s ease .9s;
+      animation: appear 1.7s ease 0.9s;
       animation-fill-mode: backwards;
    }
 
@@ -433,7 +428,7 @@ $trans2: all 2s ease-in;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      animation: appear4 .8s ease .1s;
+      animation: appear4 0.8s ease 0.1s;
       animation-fill-mode: backwards;
    }
 
@@ -460,10 +455,10 @@ $trans2: all 2s ease-in;
       right: 0;
       z-index: 10;
       transition: all 0.8s cubic-bezier(0.86, 0, 0.49, 0.92);
-      animation: appear2 .3s ease 1.3s;
+      animation: appear2 0.3s ease 1.3s;
       animation-fill-mode: backwards;
       box-shadow: -5px 10px 10px rgba(2, 1, 1, 0.551);
-      backdrop-filter: grayscale(80%) blur(2px) ;
+      backdrop-filter: grayscale(80%) blur(2px);
       @media (max-width: $bp2) {
          width: 100%;
          height: auto;
@@ -486,9 +481,7 @@ $trans2: all 2s ease-in;
    padding: 40px 40px 40px 20px;
    @media (max-width: $bp3) {
       padding: 5px;
-
    }
-   
 
    &__more {
       position: absolute;
@@ -504,8 +497,6 @@ $trans2: all 2s ease-in;
       &_active {
          animation: fadeleft 3s cubic-bezier(0.86, 0, 0.49, 0.92) infinite;
       }
-   }
-   &__search {
    }
 
    &__btn {
@@ -530,13 +521,12 @@ $trans2: all 2s ease-in;
       position: relative;
       z-index: 10;
       margin: 20px 0px 0px 0px;
-      animation: appear5 .6s ease 1.2s;
+      animation: appear5 0.6s ease 1.2s;
       animation-fill-mode: backwards;
       @media (max-width: $bp3) {
          padding: 15px;
-   
       }
-  
+
       &::before {
          content: "";
       }
@@ -557,8 +547,6 @@ $trans2: all 2s ease-in;
       @media (max-width: $bp3) {
          padding: 20px 5px;
          margin: 0;
-         
-   
       }
 
       transition: all 1s ease;
@@ -594,7 +582,6 @@ $trans2: all 2s ease-in;
       padding: 20px 5px;
       margin: 0;
       width: 90%;
-
    }
 }
 
@@ -613,7 +600,6 @@ $trans2: all 2s ease-in;
       flex-wrap: wrap;
       @media (max-width: $bp3) {
          padding: 0px;
-
       }
    }
 
@@ -632,8 +618,8 @@ $trans2: all 2s ease-in;
       height: 90px;
       background-color: rgba($mc, 0.7);
       margin: 10px;
-      transition: all .3s ease;
-      animation: appear3 .5s ease 1.2s;
+      transition: all 0.3s ease;
+      animation: appear3 0.5s ease 1.2s;
       animation-fill-mode: backwards;
       @media (max-width: $bp3) {
          flex: 0 0 80px;
@@ -641,10 +627,7 @@ $trans2: all 2s ease-in;
          height: 60px;
          font-size: 12px;
          margin: 5px;
-
-   
       }
-     
 
       &:hover {
          transform: scale(1.1);
@@ -659,9 +642,9 @@ $trans2: all 2s ease-in;
       filter: hue-rotate(30deg);
       color: #f35626;
       background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
-      -webkit-animation: hue 30s infinite linear;
+      animation: hue 30s infinite linear;
    }
 
    // .pr-content__item-text
@@ -672,3 +655,9 @@ $trans2: all 2s ease-in;
    }
 }
 
+.pr-content__item.dissapear {
+   @media (min-width: $bp2) {
+      transform: translate(90px, 90px);
+      opacity: 0;
+   }
+}
